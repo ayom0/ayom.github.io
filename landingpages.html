@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Dengan Gambar Background</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('assets/images/banner-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            position: relative;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: space-between; /* Added to distribute elements evenly */
+        }
+
+        .logo {
+            position: absolute;
+            top: 5px;
+            left: 130px;
+        }
+
+        .logo img {
+            width: 140px;
+            height: 90px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 100px;
+            left: 1080px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .overlay img {
+            width: 350px;
+            height: 520px;
+            border-radius: 5px;
+        }
+
+        .welcome-text {
+            position: absolute;
+            top: 120px;
+            left: 60px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .knowledge-text {
+            position: absolute;
+            top: 150px;
+            left: 60px;
+            font-size: 50px;
+            font-family: 'Poppins', Arial, sans-serif;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        /* Styling for the buttons */
+        .button {
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Styling for the left button */
+        .button-left {
+            background-color: #EE626B;
+            position: absolute;
+            top: 350px;
+            left: 60px;
+            width: 156px; /* Set the width of the button */
+            height: 35px; /* Set the height of the button */
+        }
+
+        /* Styling for the right button */
+        .button-right {
+            background-color: #EE626B;
+            position: absolute;
+            top: 350px;
+            right: 1150px;
+            width: 156px; /* Set the width of the button */
+            height: 35px; /* Set the height of the button */
+        }
+
+        /* Styling for the text "Mengenai Web ini" below the buttons */
+        .about-text {
+            position: absolute;
+            top: 430px;
+            left: 60px;
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Styling for the additional text */
+        .additional-text {
+            position: absolute;
+            top: 500px;
+            left: 60px;
+            font-size: 24px;
+            color: white;
+            font-weight: normal; /* Set the text to non-bold */
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="assets/images/l1.png" alt="Logo">
+    </div>
+
+    <div class="welcome-text">SELAMAT DATANG DI BADINFO</div>
+    <div class="knowledge-text">Media Pengetahuan <br>Bulu Tangkis </br></div>
+    <div class="overlay">
+        <img src="assets/images/benner1.jpg" alt="Kotak Gambar">
+    </div>
+
+    <!-- Left Button -->
+    <a href="login.html"><button class="button button-left">Login</button></a>
+
+    <!-- Right Button -->
+    <a href="register.html"><button class="button button-right">Register</button></a>
+
+    <!-- Text below the buttons -->
+    <div class="about-text">Mengenai Web ini</div>
+
+    <!-- Additional text -->
+    <div class="additional-text">
+        BADINFO merupakan web informasi tentang bulu <br>tangkis. BADINFO juga menyediakan fitur video sebagai  <br>media pembelajaran.
+    </div>
+</body>
+</html>
